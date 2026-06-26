@@ -1,0 +1,36 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "deviceScaleFactor": 2,
+  "waitAfterNavigationMs": 2000,
+  "baseUrl": "http://127.0.0.1:4173",
+  "outputDir": "docs/screenshots",
+  "screens": [
+    {
+      "id": "home",
+      "path": "/",
+      "title": "Inicio",
+      "description": "Selección del tipo de corte a realizar"
+    },
+    {
+      "id": "history",
+      "path": "/history",
+      "title": "Historial",
+      "description": "Registro de sesiones de corte anteriores"
+    },
+    {
+      "id": "settings",
+      "path": "/settings",
+      "title": "Ajustes",
+      "description": "Configuración de la aplicación"
+    },
+    {
+      "id": "new-session",
+      "path": "/session/new",
+      "title": "Nueva sesión",
+      "description": "Inicio de una nueva sesión de corte"
+    }
+  ]
+}

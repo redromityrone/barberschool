@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-06-26T21:25:55.372Z",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "deviceScaleFactor": 2,
+  "screens": [
+    {
+      "id": "home",
+      "title": "Inicio",
+      "description": "Selección del tipo de corte a realizar",
+      "path": "/",
+      "file": "docs/screenshots/home.png"
+    },
+    {
+      "id": "history",
+      "title": "Historial",
+      "description": "Registro de sesiones de corte anteriores",
+      "path": "/history",
+      "file": "docs/screenshots/history.png"
+    },
+    {
+      "id": "settings",
+      "title": "Ajustes",
+      "description": "Configuración de la aplicación",
+      "path": "/settings",
+      "file": "docs/screenshots/settings.png"
+    },
+    {
+      "id": "new-session",
+      "title": "Nueva sesión",
+      "description": "Inicio de una nueva sesión de corte",
+      "path": "/session/new",
+      "file": "docs/screenshots/new-session.png"
+    }
+  ]
+}
