@@ -1,0 +1,88 @@
+name: Screenshots
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - 'src/**'
+      - 'assets/**'
+      - 'scripts/**'
+      - 'app.json'
+      - 'package.json'
+  push:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - 'src/**'
+      - 'assets/**'
+      - 'scripts/**'
+      - 'app.json'
+      - 'package.json'
+  schedule:
+    # Regenerar capturas cada lunes a las 06:00 UTC
+    - cron: '0 6 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: screenshots-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  capture-and-update-readme:
+    name: Capture UI Screenshots
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Build web app
+        run: npm run build
+
+      - name: Capture screenshots
+        run: npm run screenshots
+
+      - name: Update README and UI preview doc
+        run: npm run screenshots:update-readme
+
+      - name: Upload screenshots artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-screenshots
+          path: |
+            docs/screenshots/*.png
+            docs/screenshots/manifest.json
+          retention-days: 30
+
+      - name: Commit and push screenshot updates
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet README.md docs/UI_PREVIEW.md docs/screenshots; then
+            echo "No screenshot changes detected"
+            exit 0
+          fi
+
+          git add README.md docs/UI_PREVIEW.md docs/screenshots/
+          git commit -m "docs(screenshots): update README with latest UI captures [skip ci]"
+          git push
