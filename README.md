@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BarberSchool
 
-## Getting Started
+PWA para barberos que documenta cortes de cabello, guía el flujo de trabajo paso a paso y guarda fotografías en Google Drive.
 
-First, run the development server:
+## Características planificadas
+
+- Captura de fotos por etapa del corte
+- Flujos de trabajo configurables (Fade, Taper, Buzz Cut)
+- Imagen de referencia con overlay y marcas guía
+- Almacenamiento automático en Google Drive
+- Modo offline con sincronización
+
+## Documentación
+
+- [Especificaciones técnicas (SPECS)](docs/SPECS.md)
+- [Plan de desarrollo (PLAN)](docs/PLAN.md)
+
+## Desarrollo local
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Comando | Descripción |
+|---------|-------------|
+| `npm run dev` | Servidor de desarrollo |
+| `npm run build` | Build de producción |
+| `npm run lint` | ESLint |
+| `npm run typecheck` | Verificación TypeScript |
+| `npm run test` | Tests unitarios (Vitest) |
 
-## Learn More
+## CI/CD
 
-To learn more about Next.js, take a look at the following resources:
+| Workflow | Trigger | Acción |
+|----------|---------|--------|
+| `ci.yml` | Push / PR | Lint, typecheck, test, build |
+| `auto-merge.yml` | PR desde `cursor/*` | Merge automático a `main` si CI pasa |
+| `scheduled.yml` | Cada 6 h | Mantenimiento de dependencias |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Fases de desarrollo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Fase 0** (actual): Fundación, specs, CI/CD
+- **Fase 1**: Cámara y captura de fotos
+- **Fase 2**: Google Drive OAuth y subida
+- **Fase 3**: Motor de flujos de trabajo
+- **Fase 4**: Imagen de referencia y marcas guía
+- **Fase 5**: Offline, historial y deploy
 
-## Deploy on Vercel
+## Variables de entorno (Fase 2+)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```env
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GOOGLE_REDIRECT_URI=
+NEXTAUTH_SECRET=
+```
