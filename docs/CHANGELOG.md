@@ -18,6 +18,24 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.0/).
 
 ---
 
+## [1.1.0] — 2026-06-26
+
+### Añadido
+
+- **DOC-015** — `docs/UI_PREVIEW.md`: Vista detallada de interfaz (auto-generado)
+- **DOC-034** — `docs/SCREENSHOTS.md`: Documentación del workflow de capturas
+- `.github/workflows/screenshots.yml`: Pipeline Playwright para capturas UI
+- `scripts/capture-screenshots.mjs`: Script de captura con Playwright
+- `scripts/update-readme-screenshots.mjs`: Actualización automática del README
+- `docs/screenshots/`: Galería PNG + manifest.json
+
+### Cambiado
+
+- **DOC-900** — README.md: Sección "Interfaz de la app" con galería embebida (v1.0.1)
+- **DOC-031** — CI_CD.md: Documentado workflow de screenshots
+
+---
+
 ## [1.0.0] — 2026-06-26
 
 ### Añadido

@@ -99,7 +99,26 @@ npm run build
 
 ---
 
-## 7. Evolución planificada
+## 7. Workflow de capturas (screenshots.yml)
+
+Pipeline separado que genera capturas de la UI y actualiza el README.
+
+```
+Build web → Playwright → manifest.json → README + UI_PREVIEW.md → commit (main)
+```
+
+| Trigger | Commit automático |
+|---------|-------------------|
+| Push a `main` (cambios UI) | ✅ |
+| `workflow_dispatch` | ✅ en `main` |
+| `pull_request` | ❌ solo artifact |
+| Schedule (lunes 06:00 UTC) | ✅ |
+
+Ver [SCREENSHOTS.md](SCREENSHOTS.md) para documentación completa.
+
+---
+
+## 8. Evolución planificada
 
 | Fase | Mejora CI |
 |------|-----------|

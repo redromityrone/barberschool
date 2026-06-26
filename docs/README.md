@@ -22,10 +22,10 @@ sync_with_code: aligned
 
 | Métrica | Valor |
 |---------|-------|
-| **Documentos totales** | 14 |
-| **Actualizados** | 6 |
-| **En progreso** | 3 |
-| **Pendientes** | 5 |
+| **Documentos totales** | 24 |
+| **Actualizados** | 13 |
+| **En progreso** | 2 |
+| **Pendientes** | 9 |
 | **Desactualizados** | 0 |
 | **Última revisión del kit** | 2026-06-26 |
 | **Fase actual del proyecto** | Fase 0 — Fundación ✅ |
@@ -61,6 +61,7 @@ sync_with_code: aligned
 | DOC-011 | [Plan de desarrollo](DEVELOPMENT_PLAN.md) | 🔄 in_progress | 1.0.0 |
 | DOC-012 | [Glosario de términos](GLOSSARY.md) | ✅ current | 1.0.0 |
 | DOC-013 | [Requisitos de usuario (user stories)](USER_STORIES.md) | 📋 planned | — |
+| DOC-015 | [Vista previa de la interfaz](UI_PREVIEW.md) | ✅ current | 1.0.0 |
 
 ### 3. Arquitectura y datos
 
@@ -78,6 +79,7 @@ sync_with_code: aligned
 | DOC-031 | [Pipeline CI/CD](CI_CD.md) | ✅ current | 1.0.0 |
 | DOC-032 | [Guía de setup local](SETUP.md) | 🔄 in_progress | 1.0.0 |
 | DOC-033 | [Testing](TESTING.md) | 📋 planned | — |
+| DOC-034 | [Workflow de capturas](SCREENSHOTS.md) | ✅ current | 1.0.0 |
 
 ### 5. Fases de implementación
 

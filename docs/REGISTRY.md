@@ -22,17 +22,17 @@ sync_with_code: aligned
 
 | Estado | Cantidad |
 |--------|----------|
-| ✅ current | 11 |
-| 🔄 in_progress | 3 |
-| 📋 planned | 8 |
+| ✅ current | 13 |
+| 🔄 in_progress | 2 |
+| 📋 planned | 9 |
 | ⚠️ outdated | 0 |
 | 🗄️ archived | 0 |
-| **Total** | **22** |
+| **Total** | **24** |
 
 | Sincronización con código | Cantidad |
 |---------------------------|----------|
-| aligned | 14 |
-| partial | 3 |
+| aligned | 16 |
+| partial | 2 |
 | outdated | 0 |
 | n/a | 5 |
 
@@ -57,6 +57,7 @@ sync_with_code: aligned
 | DOC-011 | [DEVELOPMENT_PLAN.md](DEVELOPMENT_PLAN.md) | 1.0.1 | 🔄 in_progress | partial | 0 | 2026-06-26 | 2026-06-26 | 2026-07-10 | Actualizar al cerrar Fase 0 |
 | DOC-012 | [GLOSSARY.md](GLOSSARY.md) | 1.0.0 | ✅ current | n/a | all | 2026-06-26 | 2026-06-26 | 2026-08-26 | Glosario inicial |
 | DOC-013 | [USER_STORIES.md](USER_STORIES.md) | — | 📋 planned | n/a | 1 | — | — | — | Pendiente Fase 1 |
+| DOC-015 | [UI_PREVIEW.md](UI_PREVIEW.md) | 1.0.0 | ✅ current | aligned | 0 | 2026-06-26 | 2026-06-26 | 2026-07-26 | Auto-generado por workflow |
 
 ### Arquitectura y datos
 
@@ -74,6 +75,7 @@ sync_with_code: aligned
 | DOC-031 | [CI_CD.md](CI_CD.md) | 1.0.0 | ✅ current | aligned | 0 | 2026-06-26 | 2026-06-26 | 2026-07-26 | Pipeline documentado |
 | DOC-032 | [SETUP.md](SETUP.md) | 1.0.0 | 🔄 in_progress | aligned | 0 | 2026-06-26 | 2026-06-26 | 2026-07-10 | Falta sección dispositivo físico |
 | DOC-033 | [TESTING.md](TESTING.md) | — | 📋 planned | n/a | 1 | — | — | — | Pendiente Fase 1 |
+| DOC-034 | [SCREENSHOTS.md](SCREENSHOTS.md) | 1.0.0 | ✅ current | aligned | 0 | 2026-06-26 | 2026-06-26 | 2026-07-26 | Workflow capturas UI |
 
 ### Fases de implementación
 
@@ -99,7 +101,7 @@ sync_with_code: aligned
 
 | ID | Documento | Versión | Status | Sync | Actualizado | Notas |
 |----|-----------|---------|--------|------|-------------|-------|
-| DOC-900 | [../README.md](../README.md) | 1.0.0 | ✅ current | aligned | 2026-06-26 | README del repositorio |
+| DOC-900 | [../README.md](../README.md) | 1.0.1 | ✅ current | aligned | 2026-06-26 | README con galería UI embebida |
 
 ---
 
