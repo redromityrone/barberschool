@@ -24,8 +24,11 @@ Aplicación móvil para barberos que permite capturar fotos de cortes, seguir fl
 
 ## Documentación
 
+- **[Kit de documentación](docs/README.md)** — Índice maestro con estado de cada documento
+- [Registro de documentos](docs/REGISTRY.md) — Estado detallado: actualizado / en progreso / pendiente
 - [Especificaciones técnicas](docs/SPECIFICATIONS.md)
 - [Plan de desarrollo](docs/DEVELOPMENT_PLAN.md)
+- [Arquitectura](docs/ARCHITECTURE.md) | [Modelo de datos](docs/DATA_MODEL.md) | [CI/CD](docs/CI_CD.md)
 
 ## Requisitos
 
@@ -71,7 +74,7 @@ Solo se hace merge a `main` cuando todos los checks pasan.
 
 | Fase | Estado | Descripción |
 |------|--------|-------------|
-| 0 | ✅ | Fundación, CI/CD, scaffold |
+| 0 | ✅ | Fundación, CI/CD, scaffold, kit de documentación |
 | 1 | Pendiente | SQLite + servicios de storage |
 | 2 | Pendiente | Navegación y pantallas base |
 | 3 | Pendiente | Flujo guiado de corte |

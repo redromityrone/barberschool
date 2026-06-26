@@ -1,3 +1,16 @@
+---
+id: DOC-011
+title: Plan de Desarrollo
+version: 1.0.1
+status: current
+phase: 0
+owner: equipo-barberschool
+last_updated: 2026-06-26
+last_reviewed: 2026-06-26
+next_review: 2026-07-10
+sync_with_code: aligned
+---
+
 # BarberSchool — Plan de Desarrollo
 
 ## Visión general
@@ -8,7 +21,7 @@ Este plan divide el desarrollo de BarberSchool en **6 fases incrementales**. Cad
 
 ---
 
-## Fase 0 — Fundación (actual)
+## Fase 0 — Fundación ✅
 
 **Objetivo:** Repositorio listo con CI/CD, scaffold Expo y documentación.
 
@@ -16,18 +29,20 @@ Este plan divide el desarrollo de BarberSchool en **6 fases incrementales**. Cad
 |-------|-----------|--------|
 | Especificaciones técnicas | `docs/SPECIFICATIONS.md` | ✅ |
 | Plan de desarrollo | `docs/DEVELOPMENT_PLAN.md` | ✅ |
-| Scaffold Expo + TypeScript | `package.json`, `app/`, `src/` | 🔄 |
-| Pipeline CI/CD | `.github/workflows/ci.yml` | 🔄 |
-| README actualizado | `README.md` | 🔄 |
-| Config lint/test | ESLint, Prettier, Jest | 🔄 |
+| Kit de documentación | `docs/README.md`, `REGISTRY.md`, etc. | ✅ |
+| Scaffold Expo + TypeScript | `package.json`, `app/`, `src/` | ✅ |
+| Pipeline CI/CD | `.github/workflows/ci.yml` | ✅ |
+| README actualizado | `README.md` | ✅ |
+| Config lint/test | ESLint, Prettier, Jest | ✅ |
 
-**Criterio de done:** `npm run lint && npm run typecheck && npm run test && npm run build` pasan en CI.
+**Criterio de done:** ✅ Completado — ver [phases/PHASE_0.md](phases/PHASE_0.md)
 
-**Commits planificados:**
+**Commits realizados:**
 1. `docs: add specifications and development plan`
 2. `chore: scaffold expo project with typescript`
 3. `ci: add github actions pipeline`
-4. `docs: update README with setup instructions`
+4. `docs: update README with setup and CI instructions`
+5. `docs: add documentation kit with registry and status tracking`
 
 ---
 

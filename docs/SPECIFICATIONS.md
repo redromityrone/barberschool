@@ -1,3 +1,16 @@
+---
+id: DOC-010
+title: Especificaciones Técnicas
+version: 1.0.0
+status: current
+phase: 0
+owner: equipo-barberschool
+last_updated: 2026-06-26
+last_reviewed: 2026-06-26
+next_review: 2026-07-26
+sync_with_code: aligned
+---
+
 # BarberSchool — Especificaciones Técnicas
 
 ## 1. Resumen del producto
