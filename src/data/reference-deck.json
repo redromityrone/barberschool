@@ -1,0 +1,56 @@
+[
+  {
+    "id": "angle-45",
+    "title": "Ángulo 45° en degradado",
+    "category": "angle",
+    "imageUrl": "/barberschool/reference/angle-45.jpg",
+    "description": "Mantener la máquina a 45 grados para una transición suave",
+    "tags": ["ángulo", "degradado", "técnica"],
+    "isFavorite": false
+  },
+  {
+    "id": "guard-0",
+    "title": "Guarda #0 (Skin)",
+    "category": "guard",
+    "imageUrl": "/barberschool/reference/guard-0.jpg",
+    "description": "Corte al ras de la piel, sin peine",
+    "tags": ["guarda", "skin", "fade"],
+    "isFavorite": false
+  },
+  {
+    "id": "guard-2",
+    "title": "Guarda #2",
+    "category": "guard",
+    "imageUrl": "/barberschool/reference/guard-2.jpg",
+    "description": "6mm de longitud, ideal para transiciones medias",
+    "tags": ["guarda", "medio"],
+    "isFavorite": false
+  },
+  {
+    "id": "texture-scissor",
+    "title": "Textura con tijera",
+    "category": "texture",
+    "imageUrl": "/barberschool/reference/texture-scissor.jpg",
+    "description": "Puntas de tijera para agregar textura natural",
+    "tags": ["textura", "tijera"],
+    "isFavorite": false
+  },
+  {
+    "id": "flicking-motion",
+    "title": "Movimiento flicking",
+    "category": "technique",
+    "imageUrl": "/barberschool/reference/flicking.jpg",
+    "description": "Sacudida rápida al final del movimiento para difuminar",
+    "tags": ["técnica", "difuminado"],
+    "isFavorite": false
+  },
+  {
+    "id": "lineup",
+    "title": "Line-up perfecto",
+    "category": "finish",
+    "imageUrl": "/barberschool/reference/lineup.jpg",
+    "description": "Líneas limpias en frente, patillas y nuca",
+    "tags": ["acabado", "líneas"],
+    "isFavorite": false
+  }
+]

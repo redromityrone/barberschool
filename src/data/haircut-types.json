@@ -1,0 +1,75 @@
+[
+  {
+    "id": "fade-medio",
+    "name": "Fade Medio",
+    "description": "Degradado medio con transición suave entre longitudes",
+    "thumbnailUrl": "/barberschool/reference/fade-medio.jpg",
+    "estimatedMinutes": 35,
+    "tags": ["fade", "degradado", "popular"],
+    "steps": [
+      {
+        "id": "consulta",
+        "order": 1,
+        "title": "Consulta con el cliente",
+        "description": "Confirmar estilo deseado, longitud y preferencias del cliente",
+        "referenceImageUrl": "/barberschool/reference/step-consulta.jpg",
+        "tips": ["Mostrar referencias visuales", "Confirmar guarda preferida"],
+        "requiresPhoto": false
+      },
+      {
+        "id": "preparacion",
+        "order": 2,
+        "title": "Preparación del cabello",
+        "description": "Humectar ligeramente y peinar en dirección natural del cabello",
+        "referenceImageUrl": "/barberschool/reference/step-preparacion.jpg",
+        "tips": ["Usar spray atomizador", "No empapar el cabello"],
+        "requiresPhoto": false
+      },
+      {
+        "id": "degradado-guarda",
+        "order": 3,
+        "title": "Degradado con guarda #2",
+        "description": "Usar movimiento ascendente con la máquina, de abajo hacia arriba",
+        "referenceImageUrl": "/barberschool/reference/step-degradado.jpg",
+        "tips": ["Mantener ángulo de 45°", "Movimientos cortos y controlados"],
+        "requiresPhoto": true
+      },
+      {
+        "id": "transicion",
+        "order": 4,
+        "title": "Transición con guarda #1",
+        "description": "Suavizar la línea de transición entre guarda #2 y piel",
+        "referenceImageUrl": "/barberschool/reference/step-transicion.jpg",
+        "tips": ["Usar flicking motion", "No presionar demasiado"],
+        "requiresPhoto": true
+      },
+      {
+        "id": "parte-superior",
+        "order": 5,
+        "title": "Parte superior con tijera",
+        "description": "Cortar la parte superior manteniendo la longitud deseada",
+        "referenceImageUrl": "/barberschool/reference/step-superior.jpg",
+        "tips": ["Técnica de dedos como guía", "Cortar en secciones"],
+        "requiresPhoto": true
+      },
+      {
+        "id": "detalles",
+        "order": 6,
+        "title": "Detalles y líneas",
+        "description": "Definir contornos, patillas y línea del cuello",
+        "referenceImageUrl": "/barberschool/reference/step-detalles.jpg",
+        "tips": ["Usar trimmer para líneas precisas", "Verificar simetría"],
+        "requiresPhoto": true
+      },
+      {
+        "id": "acabado",
+        "order": 7,
+        "title": "Acabado final",
+        "description": "Aplicar producto, peinar y mostrar resultado al cliente",
+        "referenceImageUrl": "/barberschool/reference/step-acabado.jpg",
+        "tips": ["Pomada o cera según preferencia", "Foto final del resultado"],
+        "requiresPhoto": true
+      }
+    ]
+  }
+]
