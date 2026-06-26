@@ -11,7 +11,10 @@
     "lint": "eslint . --ext .ts,.tsx",
     "typecheck": "tsc --noEmit",
     "test": "jest",
-    "build": "expo export --platform web"
+    "build": "expo export --platform web",
+    "screenshots": "node scripts/capture-screenshots.mjs",
+    "screenshots:update-readme": "node scripts/update-readme-screenshots.mjs",
+    "screenshots:all": "npm run build && npm run screenshots && npm run screenshots:update-readme"
   },
   "dependencies": {
     "@expo/vector-icons": "~14.0.4",
@@ -46,8 +49,10 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "jest": "^29.7.0",
     "jest-expo": "~52.0.0",
-    "react-test-renderer": "18.3.1",
+    "playwright": "^1.49.0",
     "prettier": "^3.3.0",
+    "react-test-renderer": "18.3.1",
+    "serve": "^14.2.4",
     "typescript": "~5.3.0"
   }
 }
