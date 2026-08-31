@@ -5,9 +5,9 @@ version: 1.0.0
 status: current
 phase: 0
 owner: equipo-barberschool
-last_updated: 2026-08-24
-last_reviewed: 2026-08-24
-next_review: 2026-09-23
+last_updated: 2026-08-31
+last_reviewed: 2026-08-31
+next_review: 2026-09-30
 sync_with_code: aligned
 ---
 
@@ -17,7 +17,7 @@ sync_with_code: aligned
 
 | Campo | Valor |
 |-------|-------|
-| **Generado** | 2026-08-24T06:42:08.961Z |
+| **Generado** | 2026-08-31T12:21:09.451Z |
 | **Viewport** | 390×844 (@2x) |
 | **Plataforma** | Web export (Expo) |
 | **Workflow** | [.github/workflows/screenshots.yml](../.github/workflows/screenshots.yml) |
