@@ -5,7 +5,7 @@ Aplicación móvil para barberos que permite capturar fotos de cortes, seguir fl
 ## Interfaz de la app
 
 <!-- SCREENSHOTS:START -->
-> Capturas generadas automáticamente el **2026-08-31** desde la build web (viewport 390×844).
+> Capturas generadas automáticamente el **2026-09-07** desde la build web (viewport 390×844).
 
 | Pantalla | Ruta | Descripción |
 |----------|------|-------------|
